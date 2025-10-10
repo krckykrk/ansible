@@ -1,0 +1,16 @@
+[mongodb]
+172.32.23.108                          # private ip of node
+
+[mongodb:vars]
+mongo_username=re1
+mongo_db=categories
+
+[cart]
+roboshop-us-dev-db-cart-01
+roboshop-us-dev-db-cart-02
+roboshop-us-dev-db-cart-03
+
+[user]
+roboshop-us-prod-db-user-01
+roboshop-us-prod-db-user-02
+roboshop-us-prod-db-user-03

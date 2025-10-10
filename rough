@@ -1,0 +1,46 @@
+install ansible
+
+sudo yum install ansible -y
+
+list the hosts: ansible -i inventory cart --list-hosts 
+
+list all hosts: ansible -i inventory all --list-hosts
+
+pong means alive
+
+ping the node:
+ansible -i inventory mongodb -m ping -e ansible_user=centos -e ansible_password=DevOps321
+
+install nginx:
+ansible -i inventory mongodb --become -e ansible_user=centos -e ansible_password=DevOps321 -m ansible.builtin.yum -a "name=nginx state=installed"
+start nginx
+ansible -i inventory mongodb --become -e ansible_user=centos -e ansible_password=DevOps32 -m ansible.builtin.service -a "name=nginx state=started"
+check nginx is running or not:
+sudo systemctl status nginx
+
+everything is list and key value pair and extension is yaml and space before value is important
+sudo yum install ansible -y 
+git init
+git branch -M master
+git remote add origin repo_url
+
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 01-playbook.yaml
+
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 02-playbook.yaml
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 03-playbook.yaml
+sudo systemctl status nginx
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 04-playbook.yaml
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 05-playbook.yaml
+for localhost:
+ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 06-playbook.yaml
+ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 08-playbook.yaml
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 09-playbook.yaml
+ansible-playbook -e ansible_user=centos -e ansible_password==DevOps321 -e course=java 10-playbook.yaml
+
+ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 12-playbook.yaml 
+
+ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 13-playbook.yaml
+
+ansible-playbook -e ansible_user=centos -e ansible_password=DevOps321 14-playbook.yaml
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 15-playbook.yaml
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 16-playbook.yaml

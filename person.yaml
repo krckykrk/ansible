@@ -1,0 +1,41 @@
+- name: rk
+  dob: 23-2-2001
+  # this is map
+  address:
+    city: vsp
+    country: india
+    dno: 10
+    street: mi nagar
+  # list of addresses
+  addresses:
+  - type: permanent
+    city: vng
+    country: india
+    dno: 11
+    street: im nagar
+  - type: current
+    city: gh
+    country: india
+    dno: 15
+    street: iyu nagar  
+# 2nd person information
+- name: rk1
+  dob: 23-2-2009
+  # this is map
+  address:
+    city: vsp
+    country: india
+    dno: 10
+    street: mi nagar
+  # list of addresses
+  addresses:
+  - type: permanent
+    city: vng
+    country: india
+    dno: 11
+    street: im nagar
+  - type: current
+    city: gh
+    country: india
+    dno: 15
+    street: iyu nagar      
